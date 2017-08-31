@@ -1,5 +1,6 @@
 StepJumper = require './step-jumper'
 {CompositeDisposable} = require 'atom'
+path = require 'path'
 
 module.exports =
   subscriptions: null
