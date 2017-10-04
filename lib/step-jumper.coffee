@@ -8,7 +8,7 @@ module.exports =
         @restOfLine = matchData[2]
 
     stepTypeRegex: ->
-      new RegExp "@(Given|When|Then|And)\(.*\)"
+      new RegExp "@(Given|When|Then|And)\(.*\)", "i"
 
     extractStepDescriptor: (@line) ->
       step_descriptor = @line.match(/\(\'([^\']*)/)
